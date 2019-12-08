@@ -1,0 +1,36 @@
+{
+  "name": "scrapetoken_nodejs_api",
+  "version": "1.0.0",
+  "description": "woocommerce api integration with node.js",
+  "author": "xixuefeng",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node server",
+    "start:dev": "nodemon server",
+    "start:debug": "node --nolazy --inspect-brk=9229 server",
+    "test": "nyc mocha --timeout=10000 --exit"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.3",
+    "axios": "^0.19.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "nodemon": "^2.0.1",
+    "path": "^0.12.7",
+    "querystring": "^0.2.0",
+    "woocommerce-api": "^1.5.0"
+  },
+  "devDependencies": {
+    "async": "^3.1.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2"
+  }
+}
